@@ -39,5 +39,14 @@ public class Audio : MonoBehaviour
             musicSource.Stop();
         }
 
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+          musicSource.loop = true;
+         }
+
+        if (Input.GetKeyUp(KeyCode.L))
+        {
+          musicSource.loop = false;
+        }
     }
 }
